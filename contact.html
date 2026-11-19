@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Valorant Club @ UTM</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar md:navbar-expand bg-1" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Valorant Club @ UTM</a>
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#siteMenu" aria-label="Open menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <dialog class="md:drawer drawer-end" id="siteMenu" aria-labelledby="siteMenuTitle">
+          <div class="drawer-header">
+            <p class="drawer-title" id="siteMenuTitle">Menu</p>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav md:ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container py-4">
+      <h1>Join the club</h1>
+      <p class="mb-4">Want to join a practice, try out for the team or ask a question? Send us a message and we will reply within two days.</p>
+
+      <form action="#" method="post">
+        <div class="row g-3">
+
+          <div class="col-12 md:col-6">
+            <div class="form-field">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+          </div>
+
+          <div class="col-12 md:col-6">
+            <div class="form-field">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+          </div>
+
+          <div class="col-12 md:col-6">
+            <div class="form-field">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+          </div>
+
+          <div class="col-12 md:col-6">
+            <div class="form-field">
+              <label for="role" class="form-label">Main role</label>
+              <select class="form-control" id="role" name="role">
+                <option value="duelist">Duelist</option>
+                <option value="initiator">Initiator</option>
+                <option value="controller">Controller</option>
+                <option value="sentinel">Sentinel</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-field">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-field">
+              <input type="checkbox" class="check" id="consent" name="consent" required>
+              <label for="consent">I agree that Valorant Club @ UTM can contact me by email.</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-solid theme-primary">Send message</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-1 py-4 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Valorant Club @ UTM. A student fan club, not affiliated with Riot Games. Game artwork &copy; Riot Games.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
